@@ -1,0 +1,337 @@
+/* Общие стили */
+
+body {
+	font-family: Tahoma, Arial, sans-serif;
+	color: #0e1b3e;
+	padding: 0;
+	margin: 0;
+	letter-spacing: 0.018em;
+	line-height: 1.4em;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+div, p, form, input, textarea, a, span, button, ul, li {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 27px;
+    color: #fff;
+    letter-spacing: 0.02em;
+    line-height: 1.4em;
+    padding-left: 8px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 26px;
+	letter-spacing: 0.02em;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+h4 {
+	font-size: 16px;
+	color: #2d63eb;
+	text-transform: none;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a {
+	transition: all 0.5s ease;
+	width: 218px;
+	height: 55px;
+	border-radius: 100px;
+	border: none;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-family: Tahoma, Arial, sans-serif;
+	letter-spacing: 0.02em;
+	cursor: pointer;
+	display: block;
+	padding: 15px 4px 1px 1px;
+	margin: 0 auto;
+}
+
+.offer a:active, .contact-me a:active {
+	box-shadow: 0 0 20px rgba(0,0,0,0.3) inset;
+}
+
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+
+/* Первый экран */
+
+
+.header {
+	background: rgba(74,125,252,1);
+	background: -moz-linear-gradient(-45deg, rgba(74,125,252,1) 0%, rgba(15,63,184,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(74,125,252,1)), color-stop(100%, rgba(15,63,184,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(74,125,252,1) 0%, rgba(15,63,184,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(74,125,252,1) 0%, rgba(15,63,184,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(74,125,252,1) 0%, rgba(15,63,184,1) 100%);
+	background: linear-gradient(135deg, rgba(74,125,252,1) 0%, rgba(15,63,184,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a7dfc', endColorstr='#0f3fb8', GradientType=1 );
+	height: 100vh;
+	padding: 54px 0 0px;
+}
+
+.header .container {
+	text-align: center;
+}
+
+.offer {
+	max-width: 610px;
+	margin: 157px auto 10px;
+}
+
+.offer a {
+	background: none;
+	border: 1px solid #fff;
+	color: #fff;
+	margin-top: 22px;
+}
+
+.offer a:hover {
+	background: #fff;
+	color: #255be2;
+}
+
+.arrow {
+	margin-top: 16%;
+}
+
+
+/* Вторая секция. Обо мне. */
+
+
+.about-me {
+	padding: 110px 0 0;
+}
+
+.about-me p {
+	font-size: 15px;
+	line-height: 1.6em;
+	margin-top: 23px;
+}
+
+.about-me a {
+	text-transform: none;
+	text-decoration: underline;
+	padding: 0;
+	margin: 0;
+	display: inline;
+	color: #2d63eb;
+}
+
+.about-me a:hover {
+	text-decoration: none;
+}
+
+.wrapper {
+	margin-top: 85px;
+}
+
+.wrapper h3:after {
+	content: '';
+	display: block;
+	background: #2d63eb;
+	margin-top: 26px;
+	margin-bottom: 33px;
+	width: 72px;
+	height: 3px;
+}
+
+.wrapper__mission {
+	max-width: 468px;
+}
+
+.wrapper__merits {
+	margin-left: 72px;
+}
+
+.wrapper__merits ul {
+	margin-top: 41px;
+}
+
+.item {
+	margin: 9px 0 26px;
+}
+
+.item__icon {
+	width: 52px;
+	height: 52px;
+	border-radius: 10px;
+	margin-right: 22px;
+}
+
+.item__content p {
+	margin-top: 0;
+}
+
+.item__icon_bug {
+	background: #2d63eb url(../img/bug.png) no-repeat center center;
+}
+
+.item__icon_bell {
+	background: #2d63eb url(../img/bell.png) no-repeat center center;
+}
+
+.item__icon_storm {
+	background: #2d63eb url(../img/storm.png) no-repeat center center;
+}
+
+.item__icon_camera {
+	background: #2d63eb url(../img/camera.png) no-repeat center center;
+}
+
+
+/* Третья секция. Почему ко мне обращаются. */
+
+
+.advantages {
+	padding: 95px 0 119px;
+}
+
+.advantages-list {
+	justify-content: space-evenly;
+	margin-top: 71px;
+}
+
+.advantages-list__item {
+	margin: 0 21px;
+}
+
+.advantages-list__number {
+	color: #ffa200;
+	font-size: 30px;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid #ffa200;
+	width: 75px;
+	height: 75px;
+	margin: 0 auto 14px;
+	padding-top: 24px;
+	cursor: default;
+}
+
+.advantages-list__number:hover {
+	color: #fff;
+	background: #ffa200;
+	border: 1px solid #ffa200;
+}
+
+.advantages-list__text {
+	font-size: 16px;
+	font-weight: 900;
+}
+
+
+/*  Четвертая секция. Связаться со мной. */
+
+
+.contact-me {
+	padding: 111px 0 112px;
+	background: #e6e9f1;
+}
+
+.contact-me-block {
+	max-width: 420px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.contact-me-block p {
+	font-size: 14px;
+	margin: 22px 0 26px;
+}
+
+.contact-me-block a {
+	color: #fff;
+	background: #2d63eb;
+	padding-left: 4px;
+	border: 1px solid #2d63eb;
+}
+
+.contact-me-block a:hover {
+	background: none;
+	color: #255be2;
+	border: 1px solid #2d63eb;
+}
+
+/* Футер */
+
+
+.footer {
+	background: #06319e;
+	padding: 43px 0 47px;
+	color: #fff;
+	font-size: 13px;
+}
+
+.footer .container {
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-text {
+	opacity: 0.55;
+}
+
+.policy {
+	margin: 0;
+	color: #fff;
+	text-transform: none;
+	opacity: 0.9;
+	font-weight: normal;
+	width: auto;
+	height: auto;
+	border-bottom: 1px dotted #06319e;
+	border-radius: 0px;
+	padding: 0;
+}
+
+.policy:hover {
+	border-bottom: 1px dotted #fff;
+}
+
+.name {
+	margin-left: 66px;
+}
